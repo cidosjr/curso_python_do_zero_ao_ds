@@ -1,0 +1,87 @@
+1.0 git e github
+
+1.1. Configurações do git
+git config --global user.name 'Cid Oliveira'
+git config --global user.email "cidjr.os@hotmail.com"
+git config --global core.editor vim
+git config --list
+
+1.2. Inicializar repositório:
+mkdir /home/cid/repos/curso_python_do_zero_ao_ds
+cd curso_python_do_zero_ao_ds/
+echo "..." >> README.md
+git init
+git status
+git add .
+git commit -m "create README.md"
+
+1.3. Criar repositório remoto no github e conectar (comando disponibilizados pelo github):
+git remote add origin https://github.com/CidOSJr/curso_python_do_zero_ao_ds.git
+git branch -M main
+git push -u origin main
+
+
+
+2.0 pyenv
+
+2.1. mostra todas as versões de python para instalar:
+pyenv install
+
+2.2. instalar versão do python desajada:
+pyenv install 3.8.5
+
+2.3. ver do python instaladas:
+pyenv versions
+
+2.4. selecionar o python que vai ficar padrão na maquina:
+pyenv global 3.8.5
+
+2.5. Criar o ambiente virtual( criar com o mesmo nome do projeto ):
+pyenv virtualenv 3.8.5 curso_python_do_zero_ao_ds
+
+2.5.1. Ativar o ambiente virtual:
+pyenv activate curso_python_do_zero_ao_ds
+
+2.5.2. Desativar a ambiente virtua:
+pyenv deactivate
+
+2.5.3. Instalar dependências do projeto:
+pip install -r requirements.txt
+
+2.5.4. Criar arquivo de depêndecias:
+pip freeze > requirements.txt
+
+
+
+3.0. IDE (Jupyter Notebook)
+
+3.1. Instalação do Jupyter
+pip3 install jupyter notebook
+
+3.2 Instalação das extensões do Jupyter
+pip install jupyter_contrib_nbextensions
+
+3.2.1 Ativando as extensões:
+jupyter contrib nbextensions install --user
+
+
++++++++++++++
+mkdir data
+cp ~/Downloads/kc_house_data.csv.zip ~/repos/curso_python_do_zero_ao_ds/data/
+git status
+git add .
+git commit -m 'Add nova pasta e arquivo'
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
