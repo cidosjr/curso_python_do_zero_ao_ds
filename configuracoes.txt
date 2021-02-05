@@ -64,6 +64,14 @@ pip install jupyter_contrib_nbextensions
 3.2.1 Ativando as extensões:
 jupyter contrib nbextensions install --user
 
+3.2.2. Extensões uteis.
+
+# Codefolding - encurtar funções
+# Collapsible Headings - cria seções
+# Help panel
+# Limit Output
+# ScrollDown
+# Runtools
 
 +++++++++++++
 mkdir data
